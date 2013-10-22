@@ -1,10 +1,10 @@
-<!doctype html> 
+<!doctype html>  
 <!-- Elijah Moran -->
 <!-- MIU 1310 -->
-
 <html lang="en">
 <head>
 
+  <!-- Meta Tags -->
   <meta charset="utf-8"/>
   <meta name="keywords" content="DVD, VHS, Blu-ray, blockbuster, movielib"/>
   <meta name="description" content="My Movie Library"/>
@@ -12,112 +12,98 @@
   <meta name="robots" content="index, follow"/>
   <meta name="apple-mobile-web-app-capable" content="yes"/>
   <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-
-        <title>My Movie Library</title>
-
-        <!--  Mobile viewport optimized: j.mp/bplateviewport -->
-        <meta name="HandheldFriendly" content="True">
-        <meta name="MobileOptimized" content="320"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- Mobile IE needs ClearType for smoothing fonts -->
-        <meta http-equiv="cleartype" content="on">
-
-        <!-- StyleSheets under here -->
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css"/>
-        <link rel="stylesheet" href="css/styles.css"/>
-        <style type="text/css">
-                body {
-                        background-image:url('images/dbimage.png');
-                }
-        </style>
-
-        <!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
-        <script src="js/libs/modernizr.custom.min.js"></script>
+    
+  <!-- Title -->  
+  <title>My Movie Library</title>
+  
+  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Mobile IE needs ClearType for smoothing fonts -->
+  <meta http-equiv="cleartype" content="on">
+  
+  <!-- StyleSheets under here -->
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+  <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    
+  <!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script src="js/libs/modernizr.custom.min.js"></script>
 
 </head>
-<body class="createImage">
+<!-- Body Content -->  
+<body>  
+  <div data-role="page" data-title="My Movie Library Startpage"id="home" >   
+      <!-- Header -->
+      <div data-role="header" data-position="fixed" class="mainColor">
+          <img class="imgcenter" src="images/Logo.png" align="left" />
+      </div>
+  
+    <div data-role="content" >
+      <h2><strong>...Helping you organize your MOVIE Library</strong></h2>  
+      <img src="images/brandnewlogo2.png" width="100%" alt="logomain" class="logomain"/> 
 
-        <!-- Start of Home Page -->
-        <div data-role="page" data-title="My Movie Library Startpage"id="home" >
-            
-                <!-- Header -->
-                <div data-role="header" data-position="fixed" class="mainColor">
-                    <img class="imgcenter" src="images/Logo.png" align="left" />
-                </div>
-                
-                <!-- Home Content -->
-                <div data-role="content">
+      <!-- Call to Action -->
+      <div align="center" />
+        <p class="getStarted"><strong>Click 'START LIBRARY' to get started!</strong></p></br>
+          <a href="#additem"  rel="external" /> 
+            <img class="imgcenter" src="images/startlibrarybutton.png" />
+          </a>    
+      </div></br>  
 
-                        <div>
-                                <h2><strong>...Helping you organize your movie collection</strong></h2>
-                                        <img class="imgSize" src="images/brandnewlogo2.png"/>
-                                </a>
-                        </div>
-            
-            <!-- Call to Action -->
-                    <div align="center" />
-                        <p class="getStarted"><strong>Click 'START LIBRARY' to get started!</strong></p></br>
-                            <a href="#additem"  rel="external" /> 
-                                <img class="imgcenter" src="images/startlibrarybutton.png" />
-                    </a>    
-            </div></br>  
-
-                        <!-- Browse -->
-                        <div align="center" />
-                            <div class="ui-grid-b"/><strong>Click buttons below to browse Categories:</strong></br>
-                    <div class="ui-block-a" > 
-                                            <a href="#movielib"/>
-                                                    <img class="imgcenter" src="images/dvdbtn.png"/> 
-                                                </a>     
-                                    </div>
-                                    <div class="ui-block-b" >
-                                            <a href="#movielib"/>
-                                                    <img class="imgcenter" src="images/vhsbtn.png"/>
-                                            </a>    
-                                    </div>
-                                    <div class="ui-block-c" >
-                                            <a href="#movielib"/>
-                                                    <img class="imgcenter" src="images/blu-raybtn.png"/>
-                                            </a>
-                        </div>
-                                </div>
-                        </div>
-
-                        <!-- Current Library -->
-                        <div>
-                                <a href="#movielib" id="displayData" data-role="button" data-icon="arrow-r" data-theme="e" data-iconpos="right" class="secondaryColor">Search Movie Library</a>
-                        </div>
-
-                </div>
-
-                <!-- Footer -->
-                <div data-role="footer" data-position="fixed">
-                        <!-- Navbar -->
-                        <div data-role="navbar">
-                                <ul>
-                                        <li><a href="#home" data-icon="home" data-iconpos="left" class="secondaryColor">Home</a></li>
-                                        <li><a href="#about" data-icon="info" data-iconpos="left" class="mainColor">About App</a></li>
-                                        <li><a href="#news"data-icon="news" data-iconpos="left" class="mainColor">Blockbuster News</a></li>
-                                </ul>
-                        </div>
-                </div>
+      <!-- Call Library -->
+      <a href="#movielib" id="displayData" data-role="button" data-icon="arrow-r" data-theme="e" data-iconpos="right" class="secondaryColor">Search Movie Library</a></br></br>
+      
+      <!-- Browse Cats -->
+      <div align="center" />
+        <div class="ui-grid-b"/><strong>Click buttons below to browse Categories:</strong></br>
+          <div class="ui-block-a" > 
+            <a href="#movielib"/>
+              <img class="imgcenter" src="images/dvdbtn.png"/> 
+            </a>     
+          </div>
+          <div class="ui-block-b" >
+            <a href="#underConstruction"/>
+              <img class="imgcenter" src="images/vhsbtn.png"/>
+            </a>    
+          </div>
+          <div class="ui-block-c" >
+            <a href="#error404"/>
+          <img class="imgcenter" src="images/blu-raybtn.png"/>
+            </a>
+          </div>
         </div>
+      </div> 
+    </div>    
 
-        <!-- Start of movieForm Page -->
-        <div data-role="page" data-title="Add A Movie" id="additem" data-add-back-btn="true">
-
-                <!-- Header -->
-                <div data-role="header" data-position="fixed" class="mainColor">
-                        <h1>Add a Movie</h1>
-                </div>
-
-                <!-- Form Content -->
+    <!-- Footer -->
+    <div data-role="footer" data-position="fixed">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#home" data-icon="home" data-iconpos="left" class="secondaryColor">Home</a></li>
+          <li><a href="#about" data-icon="info" data-iconpos="left" class="mainColor">About App</a></li>
+          <li><a href="#news"data-icon="news" data-iconpos="left" class="mainColor">Blockbuster News</a></li>
+        </ul>    
+      </div>      
+    </div>   
+  </div>
+  
+  <!-- Start of additem page -->
+  <div data-role="page" data-title="Add A Movie" id="additem" data-add-back-btn="true" >
+  
+    <div data-role="header" class="mainColor">
+      <img src="images/logo.png" class="logo">  
+    </div>
+    
+    <div data-role="content" class="content">
+    
+    <!-- Form Content -->
     <form action="#" method="post" id="addMovieForm">
       <div class="movieinfo">
-        <h2><u>Movie Information</u></h2>
-        <h4>* Required fields</h4>
-          <label for="platforms" id="select"> <strong>*Platform:</strong></label>
+        <h2><u>Movie Information</u></h2></br>
+        <h5>* Required fields</h5></br>
+          <label for="platforms" id="select"> <strong>* Platform:</strong></label>
             <select id="platforms">
               <option value="--Choose a Platform--">Choose A Movie Platform</option>
               <option value="DVD">DVD</option>
@@ -125,7 +111,7 @@
               <option value="Blu-ray">Blu-ray</option>
             </select> </br>
             <div id="platform-error-message" class="error-message">Please choose a platform.</div>
-          <label for="movie"> <strong>*Title:</strong> </label><input type="text" placeholder="Blade Runner..." id="movie" /><br/>
+          <label for="movie"> <strong>* Title:</strong> </label><input type="text" placeholder="Blade Runner..." id="movie" /><br/>
           <div id="title-error-message" class="error-message">Please enter a movie title.</div>
       </div>
       
@@ -138,358 +124,343 @@
           <label for="comments"> <strong>Comments:</strong> </label><textarea id="comments" placeholder="Soooo...How was it?"></textarea>
           </div>
       </div>
+
+      <!-- Call to Action -->
       <a href="#movielib" data-role="button" data-icon="plus" data-theme="e" id="saveData">Add A Movie</a>
     </form>  
   </div>
 
-      <!--Footer -->
-      <div data-role="footer" data-position="fixed">
-          <div data-role="navbar">
-              <ul>
-                  <li><a href="#home" data-icon="home" data-iconpos="left" class="secondaryColor">Home</a></li>
-                  <li><a href="#about" data-icon="info" data-iconpos="left" class="mainColor">About App</a></li>
-                  <li><a href="#news"data-icon="news" data-iconpos="left" class="mainColor">Blockbuster News</a></li>
-              </ul>
-          </div>   
-      </div>
+    <!--Footer -->
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-icon="home" data-iconpos="left" class="secondaryColor">Home</a></li>
+                <li><a href="#about" data-icon="info" data-iconpos="left" class="mainColor">About App</a></li>
+                <li><a href="#news"data-icon="news" data-iconpos="left" class="mainColor">Blockbuster News</a></li>
+            </ul>
+        </div>   
+    </div>
   </div>
-       
+
   <!-- Start of Movie Library -->
-  <div data-role="page" data-title="My Movie Library" id="movielib" data-add-back-btn="true">
+  <div data-role="page" data-title="My Movie Library" id="movielib" >
   
     <div data-role="header" data-position="fixed" class="mainColor"> 
-      <a href="#additem" id="addNew" data-icon="plus" class="ui-btn-right" data-theme="b">Add</a>
+      <a href="#additem" data-add-back-btn="true" data-icon="arrow-l" class="ui-btn-left" data-theme="a">back</a>
+      <a href="#additem" id="addNew" data-icon="plus" class="ui-btn-right" data-theme="e">Add</a>
     </div></br></br>
     
     <div>
-    <img src="images/logo.png" class="imgcenter">
+        <img src="images/logo.png" class="imgcenter">
     </div>
     
     <div data-role="content">  
-
-      <ul id="movielist" data-role="listview" data-filter="true"></ul>
-      </br>
+      <ul id="movielist" data-role="listview" data-filter="true"></ul></br>
       
-      <a href="#" id="clearData" data-role="button" data-theme="e" >Clear Movie Library</a>  
-      
+      <!-- Call to Action -->
+      <a href="#" id="clearData" data-role="button" data-theme="e" >Clear Movie Library</a>     
     </div>
     
-      <div data-role="footer" data-position="fixed">
+    <!-- Footer -->
+    <div data-role="footer" data-position="fixed">
     
-        <div data-role="navbar">
-          <ul>
+      <div data-role="navbar">
+        <ul>
           <li><a href="#home" data-icon="home" data-iconpos="left" class="secondaryColor">Home</a></li>
           <li><a href="#about" data-icon="info" data-iconpos="left" class="mainColor">About App</a></li>
           <li><a href="#news"data-icon="news" data-iconpos="left" class="mainColor">Blockbuster News</a></li>
-          </ul>
-        </div>   
+        </ul>
+      </div>   
+    </div>
+  </div>
+   
+  <!-- Start of About Page -->
+  <div data-role="page" id="about">
+
+      <!-- Header -->
+      <div data-role="header" data-position="fixed" class="mainColor">
+          <h1>ABOUT Information</h1>
       </div>
-   </div>
-                        
-        <!-- Start of About Page -->
-        <div data-role="page" id="about">
 
-                <!-- Header -->
-                <div data-role="header" data-position="fixed" class="mainColor">
-                        <h1>ABOUT Information</h1>
-                </div>
+      <!--  About Content -->
+      <div data-role="content">
+        <div>
+          <img src="images/aboutLogo.png" class="imgsize"  align="center" />
+      </div>
 
-                <!--  About Content -->
-                <div data-role="content">
+      <div>
+        <ul data-role="listview">
+            <li>
+                <a href="#appWorkings" id="About the App"/>
+                  <img src="images/aboutLogo.png"/>
+                  <h4>About the Application</h4></br>
+                  <p align="center">This will tell you about the application.</p>
+                </a>
+            </li>
 
-                        <div>
-                                <img src="images/aboutLogo.png" class="imgsize"  align="center" />
-                        </div>
+            <li>
+                <a href="#aboutDeveloper" id="About the Developer"/>
+                  <img src="images/aboutLogo.png"/>
+                  <h4>About the Developer</h4></br>
+                  <p align="center">This will tell you about the developer.</p>
+                </a>
+            </li>
 
-                        <div>
-                                <ul data-role="listview">
-                                        <li>
-                                                <a href="#appWorkings" id="About the App"/>
-                                                        <img src="images/aboutLogo.png"/>
-                                                        <h4>About the Application</h4></br>
-                                                        <p align="center">This will tell you about the application.</p>
-                                                </a>
-                                        </li>
+            <li>
+                <a href="#credits" id="Credits for Sources"/>
+                  <img src="images/aboutLogo.png"/>
+                  <h4>Credits</h4></br>
+                  <p align="center">This is where any images or information from outside sources are credited.</p>
+                </a>
+            </li>
 
-                                        <li>
-                                                <a href="#aboutDeveloper" id="About the Developer"/>
-                                                        <img src="images/aboutLogo.png"/>
-                                                        <h4>About the Developer</h4></br>
-                                                        <p align="center">This will tell you about the developer.</p>
-                                                </a>
-                                        </li>
+            <li>
+                <a href="#otherApp" id="Review Gold App"/>
+                  <img src="images/aboutLogo.png"/>
+                  <h4>Review Gold Application</h4></br>
+                  <p align="center">This will take you to the "Gold" version of this application.</p>
+                </a>
+            </li>
+        </ul></br></br>
+      </div>
+    </div>
 
-                                        <li>
-                                                <a href="#credits" id="Credits for Sources"/>
-                                                        <img src="images/aboutLogo.png"/>
-                                                        <h4>Credits</h4></br>
-                                                        <p align="center">This is where any images or information from outside sources are credited.</p>
-                                                </a>
-                                        </li>
+    <!-- Footer -->
+    <div data-role="footer" data-position="fixed">
+      <!-- Navbar -->
+      <div data-role="navbar">
+         <ul>
+           <li><a href="#home" data-icon="home" data-iconpos="left" class="mainColor">Home</a></li>
+           <li><a href="#about" data-icon="info" data-iconpos="left" class="secondaryColor">About App</a></li>
+           <li><a href="#news"data-icon="news" data-iconpos="left" class="mainColor">Blockbuster News</a></li>
+         </ul>
+      </div>
+    </div>
+  </div>                   
 
-                                    <li>
-                                                <a href="#otherApp" id="Review Gold App"/>
-                                                        <img src="images/aboutLogo.png"/>
-                                                        <h4>Review Gold Application</h4></br>
-                                                        <p align="center">This will take you to the "Gold" version of this application.</p>
-                                                </a>
-                                        </li>
-                                </ul></br></br>
-                        </div>
-                </div>
+  <!-- Start of About App Page -->
+  <div data-role="page" id="appWorkings" data-add-back-btn="true">
 
-                <!-- Footer -->
-                <div data-role="footer" data-position="fixed">
-                        <!-- Navbar -->
-                        <div data-role="navbar">
-                                <ul>
-                                        <li><a href="#home" data-icon="home" data-iconpos="left" class="mainColor">Home</a></li>
-                                        <li><a href="#about" data-icon="info" data-iconpos="left" class="secondaryColor">About App</a></li>
-                                        <li><a href="#news"data-icon="news" data-iconpos="left" class="mainColor">Blockbuster News</a></li>
-                                </ul>
-                        </div>
-                </div>
-        </div>                   
+      <!-- Header -->
+      <div data-role="header" data-position="fixed" class="mainColor">
+          <h1>ABOUT the Application</h1>
+      </div>
 
+      <!--  About Content -->
+      <div data-role="content">
+         <div>
+            <img src="images/aboutlogo.png" class="imgcenter" id="aboutLogo.Img"  align="center" />
+         </div>
 
-            <!-- Start of About App Page -->
-            <div data-role="page" id="appWorkings" data-add-back-btn="true">
-
-                <!-- Header -->
-                <div data-role="header" data-position="fixed" class="mainColor">
-                        <h1>ABOUT the Application</h1>
-                </div>
-
-                <!--  About Content -->
-                <div data-role="content">
-
-                        <div>
-                                <img src="images/aboutlogo.png" class="imgcenter" id="aboutLogo.Img"  align="center" />
-                        </div>
-
-                        <div>      
-                                </ul>
-                                <div>
-                                        <p class="indent"><strong>This application will allow you to store your current collection of movies in a central data location. You will be able to document your DVD, Blu-ray, and ,for the diehard movie fans, VHS videos. You will find that this app will help you or your guest choose a movie quickly for whatever mood you are in.</strong></p>                
-                                </div>
-                            </ul>   
-                    </div>
-                </div>
+         <div>      
+            </ul>
+              <div>
+                <h6 class="indent"><strong>This application will allow you to store your current collection of movies in a central data location. You will be able to document your DVD, Blu-ray, and ,for the diehard movie fans, VHS videos. You will find that this app will help you or your guest choose a movie quickly for whatever mood you are in.</strong></h6>                
+              </div>
+            </ul>   
+         </div>
+      </div>
                  
-                <!-- Footer -->
-                <div data-role="footer" data-position="fixed">
-                        <div data-role="footer" data-position="fixed" class="mainColor">
-                            <h3><strong>Movies help you to experience the world!!!</strong></h3>
-                    </div>
-                </div>    
-        </div>
-        
-        <!-- Start of aboutDeveloper Page -->
-        <div data-role="page" id="aboutDeveloper" data-add-back-btn="true">
-
-                <!-- Header -->
-                <div data-role="header" data-position="fixed" class="mainColor">
-                        <h1>ABOUT the Developer</h1>
-                </div>
-
-                <!--  About Content -->
-                <div data-role="content">
-
-                        <div>
-                                <img src="images/aboutlogo.png" class="imgcenter" />
-                        </div>
-
-                        <div>      
-                                <ul>
-                                <div>
-                                        <p class="indent"><strong>Hello, my name is Elijah Moran. I am a retired U.S. Army combat veteran serving faithfully for over 20 years. I now reside in the Houston, Texas metropolitan area. I have a wife and four children. Two of my children are presently attending college. I, myself am attending Full Sail University with the desire to become a Mobile Media Developer. I hope you enjoy the application.</strong></p>                
-                                </div>
-                            </ul>   
-                    </div>
-                </div>        
-                <!-- Footer -->
-                <div data-role="footer" data-position="fixed">
-                        <div data-role="footer" data-position="fixed" class="mainColor">
-                            <h3><strong>Movies help you to experience the world!!!</strong></h3>
-                    </div>
-                </div>    
-        </div>
-
-        <!-- Start of Credits Page -->
-        <div data-role="page" id="credits" data-add-back-btn="true">
-
-                <!-- Header -->
-                <div data-role="header" data-position="fixed" class="mainColor">
-                        <h1>ABOUT Credits </h1>
-                </div>
-
-                <!--  About Content -->
-                <div data-role="content">
-
-                        <div>
-                                <img src="images/aboutlogo.png" class="imgcenter" />
-                        </div>
-
-                        <div>      
-                                </ul>
-                                <div>
-                                        <p class="indent"><strong>Many of the images used to create the logos and Main page where copyright free images that were downloaded from pages below:</strong></p>
-                                        </br>
-                                        <p class="indent">Icons Pedia --- http://www.iconspedia.com/browse/icons/random/240.html</p>
-                                        </br>
-                                        <p class="indent">Very Icon.com --- http://www.veryicon.com/icons/movie--tv/curtains/theatrespotlights.html</p>
-                                        </br>
-                                        <p class="indent">Open Clipart --- http://openclipart.org/search/?query=smiley%20face&page=3</p>
-                                        </br></br>
-                        <p class="indent"><strong>The news reals came from the following sites:</strong></p>
-                        </br>
-                        <p class="indent">http://www.cinemablend.com/new/Gravity-Predicted-Win-Box-Office-Third-Time-Carrie-Open-Strong-39895.html</p>
-                        </br>
-                        <p class="indent">http://www.cinemablend.com/new/Orlando-Bloom-Talks-About-His-Return-Middle-Earth-Set-Hobbit-39883.html</p>
-                        </br>
-                        <p class="indent">http://www.mtv.com/news/articles/1715375/angry-birds-the-movie-preview.jhtml</p>
-                        </br>
-                        <p class="indent">http://www.mtv.com/news/articles/1715382/harry-potter-reunion-rumors-daniel-radcliffe.jhtml</p>
-                        </br>
-                        <p class="indent">www.mtv.com/news/articles/1715519/walking-dead-season-four-premiere-recap.jhtml</p>
-                        </br>
-                     </div>   
-                            </ul>   
-                   </div>
-                </div>        
-                <!-- Footer -->
-                <div data-role="footer" data-position="fixed">
-                        <div data-role="footer" data-position="fixed" class="mainColor">
-                            <h3><strong>Movies help you to experience the world!!!</strong></h3>
-                    </div>
-                </div>    
-        </div>
-
-        <!-- Start of otherApp Page -->
-        <div data-role="page" id="otherApp" data-add-back-btn="true">
-
-                <!-- Header -->
-                <div data-role="header" data-position="fixed" class="mainColor">
-                        <h1>ABOUT the Bronze Application</h1>
-                </div>
-
-                <div>
-                   <img src="images/aboutlogo.png" class="imgcenter" />
-               </div>
-
-                <!--  Other App Content -->
-                <div data-role="content">
-
-                        <ul data-role="listview">
-                                <li>
-                                        <img src="images/gold.png"/>
-                                        <h4>Gold Application</h4>
-                                        <p>Currently, you are using the Bronze Application.<br />To try the Gold Application, click the button<br />below.</p></br></br>
-                                </li>
-                        </ul>
-
-                        <a href="https://github.com/g29670/MIUW4Gold" data-role="button" class="secondaryColor">Review the Bronze Application</a>
-                </div>
-
-                <!-- Footer -->
-                <div data-role="footer" data-position="fixed">
-                        <div data-role="footer" data-position="fixed" class="mainColor">
-                            <h3><strong>Movies help you to experience the world!!!</strong></h3>
-                    </div>
-                </div>    
-        </div>
-
-        <!-- Start of News Page -->
-        <div data-role="page" id="news" data-add-back-btn="true">
-
-                <!-- Header -->
-                <div data-role="header" data-position="fixed" class="mainColor">
-                        <h1>BLOCKBUSTER NEWS</h1>
-                </div>
-
-                <div>
-                   <img src="images/logo.png" class="imgcenter" align="left" />
-                </div>
-
-                <!--  News Page Content -->
-                <div data-role="content" align="center">
-                    
-                    <div>
-                        <ul data-role="drilldown" data-filter="true">
-
-                            <li><a href="#underConstruction"><img src="images/gravity.png" width="10%"/><h4>Gravity Predicted To Win The Box Office For The Third Time</br><small>by Eric Eisenberg</small></br><small>2013-10-17<br/>Tags: Movies, Blockbusters</small></h4></a></li></br></br>
-
-                            <li><a href="#underConstruction" ><img src="images/legolas.png" width="10%"/><h4>Orlando Bloom Talks About His Return To Middle-Earth On The Set Of The Hobbit</br><small>by Eric Eisenberg</small></br><small>2013-10-17<br/>Tags: Tags: Adventure</small></h4></a></li></br></br>
-
-                            <li><a href="#underConstruction" ><img src="images/angry.png" width="10%"/><h4>Angry Birds': What To Expect When It Crashes Into Theaters.</br><small>by Alex Zalben</small></br><small>2013-10-13<br/>Tags: Animation</small></h4></a></li></br></br>
-
-                            <li><a href="#underConstruction" ><img src="images/harry.png" width="10%"/><h4>'Harry Potter' Reunion: Daniel Radcliffe And Alan Rickman Reveal What It'd Take</br><small>by Kevin P. Sullivan</small></br><small>2013-10-13<br/>Tags: Adventure, Action</small></h4></a></li></br></br>
-
-                            <li><a href="#underConstruction" ><img src="images/dead.png" width="10%"/><h4>'The Walking Dead' Premiere: Here's Everything You Missed</br><small>by Alex Zalben</small></br><small>2013-10-13<br/>Tags: Action, Horror</small></h4></a></li>
-                        </ul>
-                      </div>
-                </div>
-
-     <!--Footer -->
+      <!-- Footer -->
       <div data-role="footer" data-position="fixed">
-          <div data-role="navbar">
-              <ul>
-                  <li><a href="#home" data-icon="home" data-iconpos="left" class="mainColor">Home</a></li>
-                  <li><a href="#about" data-icon="info" data-iconpos="left" class="mainColor">About App</a></li>
-                  <li><a href="#news"data-icon="news" data-iconpos="left" class="secondaryColor">Blockbuster News</a></li>
-              </ul>
-          </div>   
-      </div>
+        <div data-role="footer" data-position="fixed" class="mainColor">
+          <h3><strong>Movies help you to experience the world!!!</strong></h3>
+        </div>
+      </div>    
   </div>
 
-        <!-- Start of Construction Page -->
-        <div data-role="page" id="underConstruction" data-add-back-btn="true">
+  <!-- Start of aboutDeveloper Page -->
+  <div data-role="page" id="aboutDeveloper" data-add-back-btn="true">
 
-                <!-- Header -->
-                <div data-role="header" data-position="fixed" class="mainColor">
-                        <h1>Under Construction</h1>
-                </div>
+    <!-- Header -->
+    <div data-role="header" data-position="fixed" class="mainColor">
+      <h1>ABOUT the Developer</h1>
+    </div>
 
-                <div>
-                   <img src="images/logo.png" class="imgcenter" />
-                </div>
+    <!--  About Content -->
+    <div data-role="content">
+      <div>
+        <img src="images/aboutlogo.png" class="imgcenter" />
+      </div>
 
-                <!--  Construction Content -->
-                <div data-role="content" class="content">
-                    <img src="images/Construction.png" width="100%" alt="construction" class="imgSize"/> 
-                </div>
-                
-                <!-- Footer -->
-                <div data-role="footer" data-position="fixed">
-                        <div data-role="footer" data-position="fixed" class="mainColor">
-                            <h3><strong>Movies help you to experience the world!!!</strong></h3>
-                    </div>
-                </div>    
+        <div>      
+          <ul>
+            <div>
+              <h6 class="indent"><strong>Hello, my name is Elijah Moran. I am a retired U.S. Army combat veteran serving faithfully for over 20 years. I now reside in the Houston, Texas metropolitan area. I have a wife and four children. Two of my children are presently attending college. I, myself am attending Full Sail University with the desire to become a Mobile Media Developer. I hope you enjoy the application.</strong></h6>                
+            </div>
+          </ul>   
         </div>
-        <!--  Start of 404 Page -->
-        <div data-role="page" id="error404" data-add-back-btn="true">
+    </div> 
 
-                <!-- Header -->
-                <div data-role="header" data-position="fixed" class="mainColor">
-                        <h1>404 Error</h1>
-                </div>
+    <!-- Footer -->
+    <div data-role="footer" data-position="fixed">
+      <div data-role="footer" data-position="fixed" class="mainColor">
+        <h3><strong>Movies help you to experience the world!!!</strong></h3>
+      </div>
+    </div>    
+  </div>
 
-                <div>
-                   <img src="images/logo.png" class="imgcenter" />
-                </div>
+  <!-- Start of Credits Page -->
+  <div data-role="page" id="credits" data-add-back-btn="true">
 
-                <!--  Construction Content -->
-                <div data-role="content" class="content">
-                    <img src="images/404.png" width="100%" alt="404" class="imgSize"/> 
-                </div>
+    <!-- Header -->
+    <div data-role="header" data-position="fixed" class="mainColor">
+      <h1>ABOUT Credits </h1>
+    </div>
+
+    <!--  About Content -->
+    <div data-role="content">
+      <div>
+        <img src="images/aboutlogo.png" class="imgcenter" />
+      </div>
+        <div>      
+          </ul>
+            <div>
+              <h6 class="indent"><strong>Many of the images used to create the logos and Main page where copyright free images that were downloaded from pages below:</strong></h6></br>
+              <p class="indent">Icons Pedia --- http://www.iconspedia.com/browse/icons/random/240.html</p></br>
+              <p class="indent">Very Icon.com --- http://www.veryicon.com/icons/movie--tv/curtains/theatrespotlights.html</p></br>
+              <p class="indent">Open Clipart --- http://openclipart.org/search/?query=smiley%20face&page=3</p>
+              </br></br>
+              <h6 class="indent"><strong>The news reals came from the following sites:</strong></h6></br>
+              <p class="indent">http://www.cinemablend.com/new/Gravity-Predicted-Win-Box-Office-Third-Time-Carrie-Open-Strong-39895.html</p></br>
+              <p class="indent">http://www.cinemablend.com/new/Orlando-Bloom-Talks-About-His-Return-Middle-Earth-Set-Hobbit-39883.html</p></br>
+              <p class="indent">http://www.mtv.com/news/articles/1715375/angry-birds-the-movie-preview.jhtml</p></br>
+              <p class="indent">http://www.mtv.com/news/articles/1715382/harry-potter-reunion-rumors-daniel-radcliffe.jhtml</p></br>
+              <p class="indent">www.mtv.com/news/articles/1715519/walking-dead-season-four-premiere-recap.jhtml</p></br>
+            </div>   
+          </ul>   
+        </div>
+      </div>        
+    <!-- Footer -->
+    <div data-role="footer" data-position="fixed">
+      <div data-role="footer" data-position="fixed" class="mainColor">
+        <h3><strong>Movies help you to experience the world!!!</strong></h3>
+      </div>
+    </div>    
+  </div>
+
+  <!-- Start of otherApp Page -->
+  <div data-role="page" id="otherApp" data-add-back-btn="true">
+
+    <!-- Header -->
+    <div data-role="header" data-position="fixed" class="mainColor">
+      <h1>ABOUT the Gold Application</h1>
+    </div>
+
+    <div>
+      <img src="images/aboutlogo.png" class="imgcenter" />
+    </div>
+
+    <!--  Other App Content -->
+    <div data-role="content">
+      <ul data-role="listview">
+        <li>
+          <img src="images/bronze.png"/>
+          <h4>Bronze Application</h4>
+          <p>Currently, you are using the Bronze Application.<br />To try the Gold Application, click the button<br />below.</p></br></br>
+        </li>
+      </ul>
+      <a href="https://github.com/g29670/MIUW4Gold" data-role="button" class="secondaryColor">Review the Gold Application</a>
+    </div>
+
+    <!-- Footer -->
+    <div data-role="footer" data-position="fixed">
+      <div data-role="footer" data-position="fixed" class="mainColor">
+        <h3><strong>Movies help you to experience the world!!!</strong></h3>
+      </div>
+    </div>    
+  </div>
+
+  <!-- Start of News Page -->
+  <div data-role="page" id="news" data-add-back-btn="true">
+
+    <!-- Header -->
+    <div data-role="header" data-position="fixed" class="mainColor">
+      <h1>BLOCKBUSTER NEWS</h1>
+    </div>
+
+    <div>
+      <img src="images/logo.png" class="imgcenter" align="left" />
+    </div>
+
+    <!--  News Page Content -->
+    <div data-role="content" align="center">  
+      <div>
+        <ul data-role="drilldown" data-filter="true">
+          <li><a href="#underConstruction"><img src="images/gravity.png" width="10%"/><h4>Gravity Predicted To Win The Box Office For The Third Time</br><small>by Eric Eisenberg</small></br><small>2013-10-17<br/>Tags: Movies, Blockbusters</small></h4></a></li></br></br>
+
+          <li><a href="#underConstruction" ><img src="images/legolas.png" width="10%"/><h4>Orlando Bloom Talks About His Return To Middle-Earth On The Set Of The Hobbit</br><small>by Eric Eisenberg</small></br><small>2013-10-17<br/>Tags: Tags: Adventure</small></h4></a></li></br></br>
+
+          <li><a href="#underConstruction" ><img src="images/angry.png" width="10%"/><h4>Angry Birds': What To Expect When It Crashes Into Theaters.</br><small>by Alex Zalben</small></br><small>2013-10-13<br/>Tags: Animation</small></h4></a></li></br></br>
+
+          <li><a href="#underConstruction" ><img src="images/harry.png" width="10%"/><h4>'Harry Potter' Reunion: Daniel Radcliffe And Alan Rickman Reveal What It'd Take</br><small>by Kevin P. Sullivan</small></br><small>2013-10-13<br/>Tags: Adventure, Action</small></h4></a></li></br></br>
+
+          <li><a href="#underConstruction" ><img src="images/dead.png" width="10%"/><h4>'The Walking Dead' Premiere: Here's Everything You Missed</br><small>by Alex Zalben</small></br><small>2013-10-13<br/>Tags: Action, Horror</small></h4></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Footer -->
+    <div data-role="footer" data-position="fixed">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#home" data-icon="home" data-iconpos="left" class="mainColor">Home</a></li>
+          <li><a href="#about" data-icon="info" data-iconpos="left" class="mainColor">About App</a></li>
+          <li><a href="#news"data-icon="news" data-iconpos="left" class="secondaryColor">Blockbuster News</a></li>
+        </ul>
+      </div>   
+    </div>
+  </div>
+
+  <!-- Start of Construction Page -->
+  <div data-role="page" id="underConstruction" data-add-back-btn="true">
+
+    <!-- Header -->
+    <div data-role="header" data-position="fixed" class="mainColor">
+      <h1>Under Construction</h1>
+    </div>
+
+    <div>
+      <img src="images/logo.png" class="imgcenter" />
+    </div>
+
+    <!--  Construction Content -->
+    <div data-role="content" class="content">
+      <img src="images/Construction.png" width="100%" alt="construction" class="imgSize"/> 
+    </div>
                 
-                <!-- Footer -->
-                <div data-role="footer" data-position="fixed">
-                        <div data-role="footer" data-position="fixed" class="mainColor">
-                            <h3><strong>Movies help you to experience the world!!!</strong></h3>
-                    </div>
-                </div>    
-        </div>      
+    <!-- Footer -->
+    <div data-role="footer" data-position="fixed">
+        <div data-role="footer" data-position="fixed" class="mainColor">
+          <h3><strong>Movies help you to experience the world!!!</strong></h3>
+        </div>
+    </div>    
+  </div>
+
+  <!--  Start of 404 Page -->
+  <div data-role="page" id="error404" data-add-back-btn="true">
+
+    <!-- Header -->
+    <div data-role="header" data-position="fixed" class="mainColor">
+        <h1>404 Error</h1>
+    </div>
+
+    <div>
+      <img src="images/logo.png" class="imgcenter" />
+    </div>
+
+    <!--  Construction Content -->
+    <div data-role="content" class="content">
+      <img src="images/404.png" width="100%" alt="404" class="imgSize"/> 
+    </div>
+
+    <!-- Footer -->
+    <div data-role="footer" data-position="fixed">
+      <div data-role="footer" data-position="fixed" class="mainColor">
+        <h3><strong>Movies help you to experience the world!!!</strong></h3>
+      </div>
+    </div>    
+  </div>      
   
   <!-- JavaScript under here -->
   <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>

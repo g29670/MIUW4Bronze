@@ -97,15 +97,14 @@ h2 {
     margin:0 auto; 
     text-align:center;
     font-family: "Helvetica Neue, Roboto, Droid-Sans";
-    font-size: 20px;
+    font-size: 26px;
 } 
 
 h3 {
-    color: #ffffff;
+    color: #FFFFFF;
     display:block;
     padding: 0.25em;
     text-align: center;
-    text-shadow: 2px 2px 2px #393c3e;
     font-family: " Helvetica Neue; Roboto, Droid-Sans";
     font-size: 26px;
 }
@@ -136,9 +135,19 @@ h5 {
     margin:0 auto; 
     text-align:center;
     font-family: "Helvetica Neue, Roboto, Droid-Sans";
-    font-size: 20px;
-}    
+    font-size: 15px;
+} 
 
+h6 {
+    color: #000000;
+    display:block; 
+    margin:0 auto; 
+    text-align:center;
+    font-family: "Helvetica Neue, Roboto, Droid-Sans";
+    font-style: italic;
+    font-size: 26px; 
+}   
+ 
 select {
 	width: 100%;
 }
@@ -229,7 +238,10 @@ img.additem {
    display:block; 
    margin:0 auto; 
    text-align:center;
-} 
+}
+
+
+
 
 
 

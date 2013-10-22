@@ -20,8 +20,9 @@ var Data = {
 	  }  
 	  movies.sort(Data.newsStreamSort);
 	  return movies;
-  },  
-  
+  },
+
+   //Load news excerpt from local storage data
   newsStreamSort : function(a, b) {
 	  var aKey = parseInt(a['key']);
 	  var bKey = parseInt(b['key']);
