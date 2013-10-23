@@ -10,7 +10,7 @@ var Main = {
       var movieLi = $('<li>');
       movieList.append(movieLi);
       movieLi.append($('<img>').attr("src", "images/"+ obj.platforms[1] +".png"));
-      movieLi.append($("<h3>").text(obj.movie[1]));
+      movieLi.append($("<h2>").text(obj.movie[1]));
       movieLi.append($("<p>").text("Rated as a: " + obj.score[1]));
       var movieDetailsList = $('<ul>');
       movieLi.append(movieDetailsList);

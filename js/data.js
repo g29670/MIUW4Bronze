@@ -84,7 +84,7 @@ var Data = {
     var saveDataButton = $('#saveData');
     saveDataButton.text("Save Changes");
     saveDataButton.unbind();
-    saveDataButton.bind('click', {key:evt.data.key}, Form.validate);
+    saveDataButton.bind('click', Form.validate);
     Main.showData();
 
   },
