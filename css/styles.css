@@ -76,14 +76,24 @@ body {
 }
 
 h1 {
-    color: #FFFFFF;
+    color: #ffffff;
     display:block;
     padding: 0.25em;
     text-align: center;
     text-shadow: 2px 2px 2px #393c3e;
     font-family: "Helvetica Neue, Roboto, Droid-Sans";
     font-size: 26px;
-} 
+}
+
+title {
+    color: #ffffff;
+    display:block;
+    padding: 0.25em;
+    text-align: center;
+    text-shadow: 2px 2px 2px #393c3e;
+    font-family: "Helvetica Neue, Roboto, Droid-Sans";
+    font-size: 26px;
+}  
 
 p {
 	text-align: center;
@@ -124,7 +134,7 @@ ul {
 }
 
 ul.errors li {
-	color: red;
+	color: #red;
 	margin-left: -20px;
 	list-style-type: circle;
 }	  
@@ -145,9 +155,19 @@ h6 {
     text-align:center;
     font-family: "Helvetica Neue, Roboto, Droid-Sans";
     font-style: italic;
-    font-size: 26px; 
-}   
- 
+    font-size: 26px;
+} 
+
+.newst {
+    color: #000000;
+    display:block; 
+    margin:0 auto; 
+    text-align:center;
+    font-family: "Helvetica Neue, Roboto, Droid-Sans";
+    font-style: italic;
+    font-size: 26px;
+} 
+
 select {
 	width: 100%;
 }
@@ -239,6 +259,22 @@ img.additem {
    margin:0 auto; 
    text-align:center;
 }
+
+.error {
+  color: red;
+  padding: 4em 1 em;
+  background: #EEFFFF;
+  border: 1px solid FF0000;
+  /*border = "1px solid red";*/
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-box-shadow: 1px 1px 1px red;
+}
+
+.hidden {
+  display:none; 
+}  
+
 
 
 
