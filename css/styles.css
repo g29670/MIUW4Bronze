@@ -22,6 +22,14 @@
 	 width: 100%;
 }
 
+.imgCenter {
+   width: 12%;
+}
+
+/*.content {
+        background-image: url('../images/pattern.png');
+}*/
+
 #home {
 	 text-align: center;
 	 margin-top: 20px;
@@ -42,7 +50,7 @@
     text-align:center;
 }
 
-#aboutImg {
+#aboutLogo {
 	 margin-bottom: 25px;
 }
 
@@ -92,7 +100,7 @@ title {
     text-align: center;
     text-shadow: 2px 2px 2px #393c3e;
     font-family: "Helvetica Neue, Roboto, Droid-Sans";
-    font-size: 26px;
+    font-size: 22px;
 }  
 
 p {
